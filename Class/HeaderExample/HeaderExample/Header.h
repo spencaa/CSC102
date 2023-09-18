@@ -3,8 +3,8 @@ using namespace std;
 
 class Car {
 private:
-	string model;
-	int maxSpeed;
+	string model = "generic";
+	int maxSpeed = -999;
 public:
 	Car();
 	void getName(string name);
