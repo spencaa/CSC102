@@ -44,5 +44,9 @@ int main() {
 		getline(cin, moreStudents);
 		cout << endl;
 	}
+	for (name_iter = fullname.begin(); name_iter != fullname.end(); name_iter++) {
+		cout << *name_iter;
+		cout << "\n";
+	}
 	return 0;
 }
