@@ -116,6 +116,7 @@ int main() {
 
 			cout << endl << "Exam grade: " << scoreExam << endl;
 			cout << "Letter grade: " << fe.getLetterGrade() << endl;
+			break;
 		case 2:
 
 		}
