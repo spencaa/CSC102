@@ -117,8 +117,6 @@ int main() {
 			cout << endl << "Exam grade: " << scoreExam << endl;
 			cout << "Letter grade: " << fe.getLetterGrade() << endl;
 			break;
-		case 2:
-
 		}
 	} while (choice != 3);
 	return 0;
