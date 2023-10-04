@@ -106,7 +106,6 @@ int main() {
 			cout << "Enter the number of missed answers: ";
 			cin >> missed;
 			fe.setExam(questions, missed);
-
 			cout << "Enter points per question: ";
 			cin >> points;
 			fe.getPointsEach(points);
@@ -117,6 +116,31 @@ int main() {
 			cout << endl << "Exam grade: " << scoreExam << endl;
 			cout << "Letter grade: " << fe.getLetterGrade() << endl;
 			break;
+		case 2:
+			cout << "Enter the number of questions: ";
+			cin >> questions;
+			cout << "Enter the number of missed questions: ";
+			cin >> missed;
+			cout << "Enter number of bonus questions: ";
+			cin >> bonus;
+			qz.setQuiz(questions, missed, bonus);
+			cout << "Enter the amount of points per question: ";
+			cin >> points;
+			cout << "Enter the amount of points per bonus question: ";
+			cin >> bonusPoints;
+			
+			qz.getQuizPoints(points, bonusPoints);
+			scoreQuiz = qz.totalQuizScore();
+			qz.getScore(scoreQuiz);
+
+			cout << endl << "Quiz grade: " << scoreQuiz << endl;
+			cout << "Letter Grade: " << qz.getLetterGrade() << endl << endl;
+			break;
+		case 3:
+			cout << endl << "Exiting now." << endl;
+			break;
+		default:
+			cout << endl << "Option not available." << endl;
 		}
 	} while (choice != 3);
 	return 0;
